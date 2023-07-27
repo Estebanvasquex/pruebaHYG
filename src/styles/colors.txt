@@ -1,0 +1,5 @@
+_Primary-gradient: background-image: linear-gradient(to right top, #504aff, #564eff, #5c52ff, #6155ff, #6659ff);
+
+_secundary-gradient: background-image: linear-gradient(to right top, #4137b2, #4337b2, #4536b3, #4636b3, #4835b3);
+
+_primary-button-gradient: background-image: linear-gradient(to right bottom, #55a4fd, #53a0fd, #529cfd, #5298fd, #5394fd);
