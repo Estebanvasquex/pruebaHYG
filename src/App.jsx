@@ -15,11 +15,13 @@ function App() {
     <>
       <BrowserRouter>
         <Routes>
+          <Route path="/" element={<Login />} />
+          <Route path="/login" element={<Login />} />
           <Route element={<NavBarContainer />}>
             <Route element={<FooterContainer />}>
-              <Route path="/" element={<Login />} />
+              
               <Route path="*" element={<Error404 />} />
-              <Route path="/login" element={<Login />} />
+              
               <Route path="/createUser" element={<CreateUser />} />
               <Route path="/updateUser/:id" element={<UpdateUser />} />
               <Route path="/detailUser/:id" element={<DetailUser />} />
