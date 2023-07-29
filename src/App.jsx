@@ -9,6 +9,7 @@ import UpdateUser from "./componets/pages/UpdateUser";
 import DetailUser from "./componets/pages/DetailUser";
 import NavBarContainer from "./componets/layout/navBar/NavBarContainer";
 import FooterContainer from "./componets/layout/footer/FooterContainer";
+import Users from "./componets/pages/Users";
 
 function App() {
   return (
@@ -25,6 +26,7 @@ function App() {
               <Route path="/createUser" element={<CreateUser />} />
               <Route path="/updateUser/:id" element={<UpdateUser />} />
               <Route path="/detailUser/:id" element={<DetailUser />} />
+              <Route path="/users" element={<Users/>} />
             </Route>
           </Route>
         </Routes>
