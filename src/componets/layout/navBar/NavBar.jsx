@@ -17,7 +17,7 @@ const NavBar = () => {
   return (
     <nav className="nav-container">
       <div className="nav-search">
-        <h2>HYS</h2>
+        <h2>HYG</h2>
         <div className="nav-search-input">
           <input type="text" placeholder="Buscar aquí por usuario" name = "textSearch" onChange={handleChange} />
           <SearchIcon className="icon-search" onClick={handleSearch} />

@@ -1,0 +1,25 @@
+footer
+{
+    text-align: center;
+    color: white;
+    background-image: linear-gradient(
+        to right top,
+        #4137b2,
+        #4337b2,
+        #4536b3,
+        #4636b3,
+        #4835b3
+      );
+    width: 100%;
+}
+
+footer a
+{
+    color: rgb(255, 254, 254);
+    text-decoration: none;
+
+}
+
+footer a:hover{
+    text-decoration: underline;
+}

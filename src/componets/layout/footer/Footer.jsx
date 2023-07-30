@@ -1,10 +1,11 @@
 import React from 'react'
+import './footer.css'
 
 const Footer = () => {
   return (
-    <div>
-      footer
-    </div>
+<footer>
+<h5>Creado por <a href="https://github.com/Estebanvasquex">estebanVásquez</a> Prueba HYG</h5>
+</footer>
   )
 }
 

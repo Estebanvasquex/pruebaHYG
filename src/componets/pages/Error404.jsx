@@ -1,8 +1,12 @@
 import React from 'react'
+import errorimg from '../../assets/404.avif'
+
 
 const Error404 = () => {
   return (
-    <div>Error404</div>
+    <div>
+      <img src={errorimg} alt=""  style={{with: "100vw", height: "100vh"}}/>
+    </div>
   )
 }
 
