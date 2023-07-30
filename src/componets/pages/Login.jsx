@@ -3,7 +3,7 @@ import React, { useState } from "react";
 import EmailIcon from "@mui/icons-material/Email";
 import HttpsIcon from "@mui/icons-material/Https";
 
-import form from "../../styles/styles.css";
+import  "../../styles/styles.css";
 import { useNavigate } from "react-router-dom";
 
 const Login = () => {
