@@ -6,6 +6,7 @@ import FavoriteIcon from "@mui/icons-material/Favorite";
 
 import "./user.css";
 import { IconButton } from "@mui/material";
+import { Link } from "react-router-dom";
 
 const Users = (props) => {
   const { data, handleDelete, handleUpdate, handleFavorite } = props;
@@ -19,12 +20,15 @@ const Users = (props) => {
               <h5>{item.name}</h5>
               <h5>{item.email}</h5>
               <div className="icon-user">
-                <IconButton sx={{width: "30px", height: "30px"}} onChange={handleDelete}>
+                <IconButton sx={{width: "30px", height: "30px"}} onClick={()=>{handleDelete(item.id)}}>
                   <DeleteForeverIcon color="error" />
                 </IconButton>
+                <Link to= {`/updateUser/${item.id}`}>
                 <IconButton sx={{width: "30px", height: "30px"}} onChange={()=>{handleUpdate(item.id)}}>
                 <UpdateIcon color="primary"  />
                 </IconButton>
+                </Link>
+
                 <IconButton sx={{width: "30px", height: "30px"}} onChange={handleFavorite}>
                   <FavoriteIcon color="primary" />
                 </IconButton>

@@ -4,14 +4,15 @@ import { BrowserRouter, Route, Routes } from "react-router-dom";
 
 import "./App.css";
 import Login from "./componets/pages/Login";
-import Error404 from "./componets/pages/Error404";
-import CreateUser from "./componets/pages/CreateUser";
-import UpdateUser from "./componets/pages/UpdateUser";
+import Error404 from "./componets/commonts/error404/Error404";
+import CreateUser from "./componets/commonts/createUser/CreateUser";
+
 import DetailUser from "./componets/pages/DetailUser";
 import NavBarContainer from "./componets/layout/navBar/NavBarContainer";
 import FooterContainer from "./componets/layout/footer/FooterContainer";
-
 import UsersContainer from './componets/commonts/users/UsersContainer';
+import UpdateUserContainer from './componets/commonts/updateUser/UpdateUserContainer';
+import CreateUserContainer from './componets/commonts/createUser/CreateUserContainer';
 
 
 function App() {
@@ -24,10 +25,10 @@ function App() {
           <Route element={<NavBarContainer />}>
             <Route element={<FooterContainer />}>
               
-              <Route path="*" element={<Error404 />} />
+              <Route path="*" element={<Error404/>} />
               
-              <Route path="/createUser" element={<CreateUser />} />
-              <Route path="/updateUser/:id" element={<UpdateUser />} />
+              <Route path="/createUser" element={<CreateUserContainer/>} />
+              <Route path="/updateUser/:id" element={<UpdateUserContainer/>} />
               <Route path="/detailUser/:id" element={<DetailUser />} />
               <Route path="/users" element={<UsersContainer/>} />
             </Route>

@@ -1,0 +1,15 @@
+.img-error
+{
+
+    background-color: red;
+    background: url(../../../assets/404.avif) no-repeat;
+    background-position: center;
+    background-size: cover;
+
+
+}
+
+
+.home{
+    height: 100vh;
+}
